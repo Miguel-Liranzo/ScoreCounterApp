@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ScoreCounterApp</string>
+    <string name="team_one">Team 1</string>
+    <string name="team_two">Team 2</string>
+    <string name="default_score">0</string>
+    <string name="add_point">+</string>
+</resources>

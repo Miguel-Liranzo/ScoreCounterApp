@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="@dimen/app_padding"
+    android:background="@drawable/new_york_yankees_logo_famous_brand_wallpaper_preview"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_team_one"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+
+        android:gravity="center"
+        android:paddingEnd="8dp"
+        android:text="@string/team_one"
+        android:textColor="@color/white"
+        android:textSize="48sp" />
+
+
+    <TextView
+        android:id="@+id/tv_team_two"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:text="@string/team_two"
+        android:textColor="@color/white"
+        android:textSize="48sp" />
+
+
+    <TextView
+        android:id="@+id/tv_team_one_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/btn_team_one_score"
+        android:layout_below="@id/tv_team_two"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/side_margin"
+        android:gravity="center"
+
+        android:paddingBottom="48dp"
+        android:text=""
+        android:textColor="@color/design_default_color_error"
+        android:textSize="@dimen/default_score_text_size" />
+
+    <TextView
+        android:id="@+id/tv_team_two_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@id/btn_team_two_score"
+        android:layout_below="@id/tv_team_two"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/side_margin"
+        android:gravity="center"
+
+        android:paddingBottom="48dp"
+        android:text=""
+        android:textColor="@color/design_default_color_error"
+        android:textSize="@dimen/default_score_text_size" />
+
+    <Button
+        android:id="@+id/btn_team_one_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:text="@string/add_point"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:onClick="incrementTeamOne"/>
+
+    <Button
+        android:id="@+id/btn_team_two_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:text="@string/add_point"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:onClick="incrementTeamTwo"/>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_score_text_size">104sp</dimen>
+    <dimen name="default_team_name_text_size">48sp</dimen>
+    <dimen name="top_margin">56dp</dimen>
+    <dimen name="side_margin">72dp</dimen>
+    <dimen name="bottom_margin">108dp</dimen>
+    <dimen name="app_padding">8dp</dimen>
+</resources>
